@@ -1,0 +1,14 @@
+:root { --paper: #fffdf6; --ink: #231f1c; --red: #e5392f; --yellow: #f6c12d; --muted: #6b625a; }
+@media (prefers-color-scheme: dark) { :root { --paper: #1f1b18; --ink: #f5efe6; --muted: #b9ada0; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.6 "Chalkboard SE", ui-rounded, system-ui, sans-serif; }
+main { max-width: 680px; margin: 0 auto; padding: 32px 16px 64px; }
+header { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; }
+header img { width: 72px; height: 72px; border-radius: 16px; border: 3px solid var(--ink); }
+h1 { margin: 0; font-size: 30px; line-height: 1.1; }
+h1 span { color: var(--red); }
+h2 { font-size: 21px; margin: 28px 0 6px; }
+a { color: var(--red); }
+nav { display: flex; gap: 16px; margin-top: 4px; font-size: 15px; }
+.muted { color: var(--muted); font-size: 15px; }
+.card { border: 3px solid var(--ink); border-radius: 18px; padding: 16px 20px; background: color-mix(in srgb, var(--yellow) 18%, var(--paper)); }
